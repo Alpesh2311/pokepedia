@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Favourites.css";
 import { FaXmark, FaAngleLeft } from "react-icons/fa6";
 import { useFavorites } from "../../FavouriteContext";

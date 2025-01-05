@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Filter.css";
 
 function Filter({ name, setName, onSearch, clear, more }) {

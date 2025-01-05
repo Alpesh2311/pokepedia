@@ -1,6 +1,6 @@
 Overview
 
-Pokémon Explorer is a web application that allows users to search for, explore, and interact with Pokémon data using the Pokémon API. This app is built with a modern front-end framework and provides an intuitive interface for discovering Pokémon details.
+Poképedia is a web application built using React that allows users to search for, explore, and interact with Pokémon data via the Pokémon API. The app provides an intuitive and responsive interface for discovering Pokémon details, managing favorites, and exploring a paginated list of Pokémon.
 
 Features
 
