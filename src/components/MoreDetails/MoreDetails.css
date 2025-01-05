@@ -1,8 +1,8 @@
 .more-details {
   z-index: 1;
   position: fixed;
-  width: 60%;
-  height: 60%;
+  width: 700px;
+  height: 700px;
   padding: 10px;
   top: 50%;
   left: 50%;
@@ -11,25 +11,28 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: white;
+  background-color: #f5ecd5;
   border-radius: 15px;
 }
 
 .more-details img {
+  width: 50%;
+  height: 50%;
   margin: 5px 0;
-  border: 1px solid blue;
-  border-radius: 5px;
 }
 
 .poke-name {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .close {
+  width: 5%;
+  height: 5%;
   position: absolute;
   padding: 5px;
-  top: -12px;
-  right: -12px;
+  top: 10px;
+  right: 10px;
   color: white;
   background: black;
   border: 1px solid white;
@@ -38,13 +41,20 @@
 
 .details {
   width: 100%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   overflow: scroll;
   scrollbar-width: none;
+}
+
+.details p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #3d3d3d;
 }
 
 .types,
@@ -79,10 +89,52 @@
   text-align: center;
 }
 .item-stats > p > span {
-  font-weight: 600;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+  .more-details {
+    width: 500px;
+    height: 500px;
+  }
+
+  .more-details img {
+    width: 40%;
+    height: 40%;
+    margin: 0;
+    transform: scale(1.1);
+  }
+}
+@media screen and (max-width: 768px) {
+  .more-details {
+    width: 450px;
+    height: 450px;
+  }
+
+  .more-details img {
+    width: 40%;
+    height: 40%;
+    margin: 0;
+    transform: scale(1.1);
+  }
 }
 
 @media screen and (max-width: 425px) {
+  .more-details {
+    width: 370px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .more-details img {
+    width: 40%;
+    height: 40%;
+    margin: 0;
+    transform: scale(1.1);
+  }
+
   .item-stats {
     flex-direction: column;
   }
