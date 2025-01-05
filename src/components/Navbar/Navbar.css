@@ -1,0 +1,39 @@
+.navbar {
+  width: 100%;
+  height: 100px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar h1 {
+  margin: 0 30px;
+  font-size: 40px;
+  background: red;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+@media screen and (max-width: 425px) {
+  .navbar img {
+    display: none;
+  }
+}
+
+.blur {
+  filter: blur(10px);
+  pointer-events: none;
+}
+
+.blur * {
+  pointer-events: none;
+}

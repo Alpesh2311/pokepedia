@@ -1,0 +1,35 @@
+.filter {
+  width: 100%;
+  height: 60px;
+  padding: 0 10px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter input {
+  width: 40%;
+  height: 40px;
+  margin: 4px 15px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.filter button {
+  margin: 0 10px;
+}
+.search:disabled {
+  background: rgb(103, 108, 124);
+}
+
+.blur {
+  filter: blur(10px);
+  pointer-events: none;
+}
+
+.blur * {
+  pointer-events: none;
+}

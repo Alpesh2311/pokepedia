@@ -1,0 +1,21 @@
+.App {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+.toggle-fav {
+  display: none;
+}

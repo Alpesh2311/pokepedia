@@ -1,0 +1,149 @@
+.fav-wrapper {
+  width: 25%;
+  height: 2170px;
+  transition: transform 1s ease-in-out;
+}
+.favourites {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.favourites h2 {
+  margin: 15px 0;
+  height: 35px;
+}
+
+.list {
+  width: 100%;
+  height: calc(100%-35px);
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.list p {
+  text-align: center;
+}
+.favourite-card {
+  position: relative;
+  width: 98%;
+  height: 90px;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  background: rgb(85, 188, 206);
+  border-radius: 10px;
+}
+
+.favourite-card img {
+  width: 30%;
+  height: 100%;
+}
+
+.favourite-card p {
+  width: 40%;
+  padding: 0 10px;
+  font-size: 1.1rem;
+}
+
+.cancel {
+  position: absolute;
+  padding: 5px;
+  right: 20px;
+  background: white;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .favourites {
+    height: 3020px;
+  }
+  .favourite-card {
+    height: 80px;
+  }
+  .favourite-card img {
+    width: 40%;
+  }
+  .favourite-card p {
+    width: 40%;
+    padding: 0 5px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .favourites {
+    height: 3020px;
+  }
+  .favourites h2 {
+    text-align: center;
+    height: 60px;
+  }
+  .favourite-card {
+    height: 80px;
+  }
+  .favourite-card img {
+    margin-left: 10%;
+    width: 50%;
+  }
+  .favourite-card p {
+    display: none;
+  }
+
+  .cancel {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .fav-wrapper {
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    transform: translate(0, -50%);
+    width: 70%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .hide-fav {
+    transform: translate(263px, -50%);
+  }
+
+  .favourites {
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 15px;
+    border-radius: 10px 0 0 10px;
+    background: rgb(78 112 244);
+  }
+  .toggle-fav {
+    width: 20px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(78 112 244);
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hide-fav {
+    transform: translate(230px, -50%);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hide-fav {
+    transform: translate(206px, -50%);
+  }
+}
